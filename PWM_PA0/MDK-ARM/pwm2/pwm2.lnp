@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"pwm2\startup_stm32f103xb.o"
+"pwm2\main.o"
+"pwm2\gpio.o"
+"pwm2\tim.o"
+"pwm2\stm32f1xx_it.o"
+"pwm2\stm32f1xx_hal_msp.o"
+"pwm2\stm32f1xx_hal_gpio_ex.o"
+"pwm2\stm32f1xx_hal_tim.o"
+"pwm2\stm32f1xx_hal_tim_ex.o"
+"pwm2\stm32f1xx_hal.o"
+"pwm2\stm32f1xx_hal_rcc.o"
+"pwm2\stm32f1xx_hal_rcc_ex.o"
+"pwm2\stm32f1xx_hal_gpio.o"
+"pwm2\stm32f1xx_hal_dma.o"
+"pwm2\stm32f1xx_hal_cortex.o"
+"pwm2\stm32f1xx_hal_pwr.o"
+"pwm2\stm32f1xx_hal_flash.o"
+"pwm2\stm32f1xx_hal_flash_ex.o"
+"pwm2\stm32f1xx_hal_exti.o"
+"pwm2\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "pwm2\pwm2.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "pwm2.map" -o pwm2\pwm2.axf
