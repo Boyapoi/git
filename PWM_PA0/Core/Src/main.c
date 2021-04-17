@@ -117,7 +117,6 @@ HAL_TIM_PWM_Start(&htim2,TIM_CHANNEL_1);
 	}
  
   /* USER CODE END 3 */
-
 }
 
 /**
